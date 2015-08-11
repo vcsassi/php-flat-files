@@ -1,6 +1,6 @@
 <?php
-$file = fopen("einstein.txt", "r") or die("unable to open file!");
-$file_data = fread($file, fielsize("einstein.txt"));
+$file = fopen("Einstein.txt", "r") or die("unable to open file!");
+$file_data = fread($file, filesize("Einstein.txt"));
 fclose($file);
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ fclose($file);
         <form action="new_line_adder.php" method="POST">
         	<fieldset>
         	<legend>Add this line to the end</legend>
-        	<input type="text" name="It is the supreme art of the teacher to awaken joy in creative expression and knowledge."/>
+        	<input type="text" name="newLine"/>
         	<input type="submit">
         	</fieldset>
         </form>
